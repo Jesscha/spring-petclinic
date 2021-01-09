@@ -35,6 +35,11 @@ public class Person extends BaseEntity {
 	@NotEmpty
 	private String lastName;
 
+	@Column(name = "age")
+	private Integer age;
+
+
+
 	public String getFirstName() {
 		return this.firstName;
 	}
@@ -49,6 +54,14 @@ public class Person extends BaseEntity {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
 	}
 
 }
